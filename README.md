@@ -1,5 +1,5 @@
 # Docker Image for PHP 7.4 (fpm)
-[![Build Status](https://travis-ci.org/tmtde/php73-fpm.svg?branch=master)](https://travis-ci.org/tmtde/php73-fpm)
+[![Build Status](https://travis-ci.org/tmtde/php74-fpm.svg?branch=master)](https://travis-ci.org/tmtde/php74-fpm)
 
 ## Description
 
