@@ -15,11 +15,9 @@ jobs:
     steps:
       - name: prepare and build the image
       - uses: actions/checkout@v2
-      - run: docker build -t tmtde/fpm-80 .
-
-      - name: run the image and run perform tests
-      - run: docker run -i --rm -d tmtde/fpm-80
-      - run: docker ps | grep -q fpm-80
-      - run: docker run -i tmtde/fpm-80 php -v | grep -E "^PHP\s8\.0"
-      - run: docker run -i tmtde/fpm-80 composer --version
-      - run: docker run -i tmtde/fpm-80 php -r 'print (iconv("utf-8", "ASCII//TRANSLIT", "ströng contäning ümlaöits"));'
+        - run: docker build -t tmtde/fpm-80 .
+        - run: docker run -i --rm -d tmtde/fpm-80
+        - run: docker ps | grep -q fpm-80
+        - run: docker run -i tmtde/fpm-80 php -v | grep -E "^PHP\s8\.0"
+        - run: docker run -i tmtde/fpm-80 composer --version
+        - run: docker run -i tmtde/fpm-80 php -r 'print (iconv("utf-8", "ASCII//TRANSLIT", "ströng contäning ümlaöits"));'
