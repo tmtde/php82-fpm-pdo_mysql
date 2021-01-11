@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: prepare and build the image
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - run: docker build -t tmtde/fpm-80 .
       - run: docker run -i --rm -d tmtde/fpm-80
       - run: docker ps | grep -q fpm-80
