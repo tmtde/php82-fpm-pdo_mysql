@@ -1,9 +1,9 @@
-# Docker Image for PHP 7.4 (fpm)
-[![Build Status](https://travis-ci.org/tmtde/php74-fpm.svg?branch=master)](https://travis-ci.org/tmtde/php74-fpm)
+# Docker Image for PHP 8.0 (fpm)
+[![Build Status](https://travis-ci.org/tmtde/php80-fpm.svg?branch=master)](https://travis-ci.org/tmtde/php80-fpm)
 
 ## Description
 
-Docker image for PHP 7.4 based on the [official php 7.4 alpine image](https://github.com/docker-library/php/tree/master/7.4/alpine3.11/fpm) including [composer](https://getcomposer.org) and additional extensions enabled
+Docker image for PHP 8.0 based on the [official php 8.0 alpine image](https://github.com/docker-library/php/tree/master/8.0/alpine3.12/fpm) including [composer](https://getcomposer.org) and additional extensions enabled
 
 ## Extensions
 
