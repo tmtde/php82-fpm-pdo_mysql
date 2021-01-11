@@ -13,9 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: prepare and build the image
       - uses: actions/checkout@v2
-      - name: Build the Docker image
       - run: docker build -t tmtde/fpm-80 .
+
+      - name: run the image and run perform tests
       - run: docker run -i --rm -d tmtde/fpm-80
       - run: docker ps | grep -q fpm-80
       - run: docker run -i tmtde/fpm-80 php -v | grep -E "^PHP\s8\.0"
