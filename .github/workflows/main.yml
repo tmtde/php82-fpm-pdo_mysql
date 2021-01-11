@@ -1,0 +1,24 @@
+name: PHP 8.0 Docker build
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the Docker image
+        run: 
+            -  docker build -t tmtde/fpm-80 .
+            - docker run -i --rm -d tmtde/fpm-80
+            - docker ps | grep -q fpm-80
+            - docker run -i tmtde/fpm-80 php -v | grep -E "^PHP\s8\.0"
+            - docker run -i tmtde/fpm-80 composer --version
+            - docker run -i tmtde/fpm-80 php -r 'print (iconv("utf-8", "ASCII//TRANSLIT", "ströng contäning ümlaöits"));'
