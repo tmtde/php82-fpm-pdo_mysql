@@ -1,9 +1,9 @@
-# Docker Image for PHP 8.1 (fpm)
-[![Build Status](https://travis-ci.org/tmtde/php80-fpm.svg?branch=master)](https://travis-ci.org/tmtde/php80-fpm)
+# Docker Image for PHP 8.2 (fpm)
+[![Build Status](https://github.com/tmtde/php82-fpm/actions/workflows/docker.image.yml/badge.svg?branch=master)](https://github.com/tmtde/php82-fpm/actions)
 
 ## Description
 
-Docker image for PHP 8.1 based on the [official php 8.1 alpine image](https://github.com/docker-library/php/tree/master/8.1/alpine3.12/fpm) including [composer](https://getcomposer.org) and additional extensions enabled
+Docker image for PHP 8.2 based on the [official php 8.2 alpine image](https://github.com/docker-library/php/tree/master/8.2/alpine3.17/fpm) including [composer](https://getcomposer.org) and additional extensions enabled
 
 ## Extensions
 
