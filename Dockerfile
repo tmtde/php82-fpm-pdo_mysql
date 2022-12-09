@@ -1,4 +1,4 @@
-FROM php:8.1.13-fpm-alpine
+FROM php:8.2.0-fpm-alpine
 
 ARG BUILD_DATE
 ARG BUILD_VERSION
@@ -6,9 +6,9 @@ ARG VCS_URL
 ARG VCS_REF
 ARG VCS_BRANCH
 # See http://label-schema.org/rc1/ and https://microbadger.com/labels
-LABEL maintainer="Thomas Appel <thomas.appel@tmt.de>" \
-    org.label-schema.name="PHP 8.1 - FastCGI Process Manager" \
-    org.label-schema.description="PHP-FPM 8.1 (with some more extensions installed)" \
+LABEL maintainer="Jan Wagner <waja@cyconet.org>" \
+    org.label-schema.name="PHP 8.2 - FastCGI Process Manager" \
+    org.label-schema.description="PHP-FPM 8.2 (with some more extensions installed)" \
     org.label-schema.vendor="TMT GmbH & Co. KG" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.build-date="${BUILD_DATE:-unknown}" \
