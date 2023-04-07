@@ -29,6 +29,7 @@ openssl
 pcre
 PDO
 pdo_sqlite
+pdo_mysql
 Phar
 posix
 readline
