@@ -1,0 +1,14 @@
+version: "1"
+rules:
+  - base: master
+    upstream: tmtde:master
+    mergeMethod: rebase
+    assignees:              # Optional
+      - waja
+      - nItroFreeZer
+    reviewers:              # Optional
+      - waja
+      - nItroFreeZer
+    conflictReviewers:      # Optional, on merge conflict assign a reviewer
+      - waja
+      - nItroFreeZer
