@@ -50,7 +50,6 @@ RUN set -xe; \
   && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
   && chmod +x /usr/local/bin/composer \
   # Cleanup build deps
-  #  8 # clean up build deps
   && apk del .build-deps \
   && rm -rf /tmp/* /var/cache/apk/*
 
