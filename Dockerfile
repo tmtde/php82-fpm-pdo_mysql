@@ -52,5 +52,3 @@ RUN set -xe; \
   # Cleanup build deps
   && apk del .build-deps \
   && rm -rf /tmp/* /var/cache/apk/*
-
-  ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
